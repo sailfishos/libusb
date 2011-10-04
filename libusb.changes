@@ -1,0 +1,20 @@
+* Wed Jul 28 2010 Marko Saukko <marko.saukko@cybercom.com> - 0.1.12
+- Added -devel dependency to -static package
+
+* Tue May 11 2010 Marko Saukko <marko.saukko@gmail.com> - 0.1.12
+- Enabled static builds
+
+* Sat Feb 27 2010 Anas Nashif <anas.nashif@intel.com> - 0.1.12
+- Updated with latest spectacle
+- Include YAML file in source rpm
+
+* Tue Feb 16 2010 Anas Nashif <anas.nashif@intel.com> - 0.1.12
+- Updated yaml and sanitized spec
+- Do not package static library
+
+* Thu Dec 18 2008 Arjan van de Ven <arjan@linux.intel.com> 0.1.12
+- Use standard spec format
+
+* Tue Aug 26 2008 Anas Nashif <anas.nashif@intel.com> 
+- install COPYING file
+- minor spec cleanup
