@@ -1,8 +1,0 @@
-<package project="Mer:Trunk:Base" name="libusb">
-  <title>A library which allows userspace access to USB devices</title>
-  <description>This package provides a way for applications to access USB devices.
-
-
-</description>
-  <url>http://sourceforge.net/projects/libusb/</url>
-</package>
