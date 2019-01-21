@@ -1,3 +1,6 @@
+* Thu Jan 17 2019 Tomi Leppänen <tomi.leppanen@jolla.com> - 0.1.12-2
+- [packaging] Add libusb-doc subpackage. Contributes to JB#24119
+
 * Wed Jul 28 2010 Marko Saukko <marko.saukko@cybercom.com> - 0.1.12
 - Added -devel dependency to -static package
 
