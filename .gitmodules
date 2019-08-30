@@ -1,0 +1,3 @@
+[submodule "upstream"]
+	path = libusb-compat-0.1
+	url = https://git.sailfishos.org/mirror/libusb-compat-0.1
