@@ -4,7 +4,7 @@ Version: 0.1.7
 Release: 1
 Summary: A library which allows userspace access to USB devices
 License: LGPLv2+
-URL: http://sourceforge.net/projects/libusb/
+URL: https://github.com/sailfishos/libusb/
 Source0: libusb-%{version}.tar.bz2
 Patch0: libusb-config-multilib.patch
 BuildRequires:  gcc
@@ -15,7 +15,6 @@ This package provides a way for applications to access USB devices.
 Legacy libusb-0.1 is no longer supported by upstream, therefore content of this
 package was replaced by libusb-compat. It provides compatibility layer allowing
 applications written for libusb-0.1 to work with libusb-1.0.
-
 
 %package devel
 Summary: Development files for libusb
@@ -28,22 +27,17 @@ libusb-1.0 library instead of this one.
 
 %package doc
 Summary:   Documentation for %{name}
-Group:     Documentation
 Requires:  %{name} = %{version}-%{release}
 
 %description doc
 %{summary}.
 
-
 %prep
-%setup -q -n libusb-%{version}/libusb-compat-0.1
-%patch0 -p1 -b .config-multilib
-
+%autosetup -p1 -n libusb-%{version}/libusb-compat-0.1
 
 %build
 %autogen --disable-static
-make %{?_smp_mflags}
-
+%make_build
 
 %install
 %make_install
@@ -66,5 +60,4 @@ install -m0644 -t %{buildroot}%{_docdir}/%{name}-%{version} AUTHORS ChangeLog NE
 %{_bindir}/libusb-config
 
 %files doc
-%defattr(-,root,root,-)
 %{_docdir}/%{name}-%{version}
